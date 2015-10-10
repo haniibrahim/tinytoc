@@ -3,13 +3,18 @@
 Plugin Name: tinyTOC
 Plugin URI: http://wordpress.org/plugins/tinytoc
 Description: Automaticly builds a Table of Contents using headings (h1-h6) in post/page/CPT content
-Version: 0.8.0
+Version: 0.8.1
 Author: Arūnas Liuiza
 Author URI: http://arunas.co/
 License: GPLv2
 Text Domain: tinytoc
 Domain Path: /languages
 
+ * Versions:
+ * 0.8.0	Arūnas Liuiza	Original files
+ * 0.8.1	Hani Ibrahim	Changed second hierarchie ordered list to unordered list 
+ * 							with cicrcle as symbol
+  
     Copyright 2014  Arūnas Liuiza  (email : ask@arunas.co)
 
     This program is free software; you can redistribute it and/or modify
@@ -311,7 +316,7 @@ class tinyTOC_walker extends Walker {
     'id' => 'db_id'
   );
   function start_lvl(&$output, $depth = 0, $args = array()) {
-    $output .= "\n<ol>\n";
+    $output .= "\n<ul style=\"list-style-type:circle;\">\n";
   }
   function start_el( &$output, $object, $depth = 0, $args = array(), $current_object_id = 0 ) {
     $output .= '<li>';
@@ -324,7 +329,7 @@ class tinyTOC_walker extends Walker {
     $output .= "</li>\n";
   }
   function end_lvl(&$output,$depth=0,$args=array()) {
-    $output .= "</ol>\n";
+    $output .= "</ul>\n";
   }
 }
 
