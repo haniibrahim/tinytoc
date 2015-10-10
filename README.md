@@ -1,6 +1,6 @@
 # tinyTOC 0.8.1
 
-Wordpres plugin from Arūnas Liuiza modified by Hani Ibrahim
+Wordpress plugin from Arūnas Liuiza modified by Hani Ibrahim
 
 **tinyTOC automaticly builds a table of contents using headings (h1-h6) in post/page/CPT content of a Wordpress blog**
 
