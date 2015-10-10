@@ -311,7 +311,7 @@ class tinyTOC_walker extends Walker {
     'id' => 'db_id'
   );
   function start_lvl(&$output, $depth = 0, $args = array()) {
-    $output .= "\n<ul>\n";
+    $output .= "\n<ol>\n";
   }
   function start_el( &$output, $object, $depth = 0, $args = array(), $current_object_id = 0 ) {
     $output .= '<li>';
