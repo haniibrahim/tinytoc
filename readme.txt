@@ -53,6 +53,10 @@ You need to activate the widget via plugin Settings page (`WP Admin > Settings >
 
 == Changelog ==
 
+= 0.8.1 =
+
+* changed the ordered list of the second hierarchie to an unordered one and changed the symbol to the circle instead of a disc. (by Hani Ibrahim)
+
 = 0.8.0 = 
 
 * a `tinytoc_widget_content` filter (by Maciej Gryniuk / odie2 )
